@@ -1,60 +1,65 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #00c9ff, #92fe9d);
-  color: #333;
+  background: #f0f4f8;
+  font-family: Arial, sans-serif;
+  padding: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 .container {
-  background-color: white;
-  padding: 2rem 3rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  max-width: 600px;
-  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
 }
 
 h1 {
-  margin-bottom: 0.5rem;
-  font-size: 2rem;
-  color: #0e6ba8;
+  color: #0a4d8c;
+  margin-bottom: 10px;
 }
 
-.card {
-  background-color: #f9f9f9;
-  border: 2px dashed #0e6ba8;
+textarea {
+  width: 100%;
+  height: 180px;
   padding: 1rem;
-  border-radius: 10px;
-  margin: 1.5rem 0;
-  font-family: monospace;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
 }
 
-.buttons button {
-  background-color: #0e6ba8;
+button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0a4d8c;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
-  margin: 0 1rem;
-  font-size: 1rem;
   border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
-.buttons button:hover {
-  background-color: #055e93;
+button:hover {
+  background-color: #06396a;
 }
 
-#feedback {
-  margin-top: 1rem;
-  font-weight: bold;
+#resultBox {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 2px solid #0a4d8c;
+  border-radius: 8px;
+  background-color: #eef6ff;
 }
 
-#score {
-  margin-top: 1rem;
-  font-size: 1.2rem;
+.hidden {
+  display: none;
+}
+
+#highlightedOutput {
+  background: #fff4e5;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
 }
