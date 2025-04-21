@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PhishShield - Test Your Skills</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>PhishDetect AI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>PhishShield</h1>
-    <p>Can you spot the phishing attempt?</p>
+    <h1>PhishDetect AI</h1>
+    <p>Paste the content of a suspicious email or message. My AI will analyze it.</p>
 
-    <div class="card" id="phish-card">
+    <textarea id="inputText" placeholder="Paste the email or message here..."></textarea>
+    <button onclick="analyzePhish()">Analyze</button>
+
+    <div id="resultBox" class="hidden">
+      <h3>Analysis Result</h3>
+      <p id="riskLevel"></p>
+      <p id="highlightedOutput"></p>
+      <ul id="adviceList"></ul>
     </div>
-
-    <div class="buttons">
-      <button onclick="submitAnswer(true)">This is Legit</button>
-      <button onclick="submitAnswer(false)">This is a Phish</button>
-    </div>
-
-    <div id="feedback"></div>
-    <div id="score">Score: 0</div>
   </div>
 
   <script src="script.js"></script>
